@@ -1,0 +1,73 @@
+.cardsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--sub-bg);
+  border-radius: 1rem;
+  padding: 1rem;
+  /* gap: 16px; */
+  box-shadow: var(--shadow-soft, 0px 4px 12px rgba(0, 0, 0, 0.05));
+  position: relative;
+  max-width: 200px;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.info h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: #888;
+}
+.details-link {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #6c63ff;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.progress-bar {
+  margin-top: 5px;
+  width: 100px;
+  height: 4px;
+  background: #e2e8f0;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-fill{
+  height: 100%;
+  border-radius: 2px;
+  background-color: red;
+  color: red;
+}
+
+.high {
+  background: #10b981;
+  width: 85%;
+}
+.medium {
+  background: #f59e0b;
+  width: 60%;
+}
+.low {
+  background: #ef4444;
+  width: 30%;
+}

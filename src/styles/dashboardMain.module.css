@@ -1,0 +1,18 @@
+.dashboard-main {
+  margin: 0;
+  padding: 1rem;
+  grid-area: main;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard-main {
+    padding: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .dashboard-main {
+    padding: 0.5rem;
+  }
+}

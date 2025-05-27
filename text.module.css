@@ -1,0 +1,9 @@
+.text {
+  padding: 10px;
+  color: var(--primary-blue);
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+
