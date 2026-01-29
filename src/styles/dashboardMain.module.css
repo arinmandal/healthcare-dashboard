@@ -3,16 +3,34 @@
   padding: 1rem;
   grid-area: main;
   width: 100%;
+  min-width: 0;
+  overflow-x: hidden;
 }
 
+/* Small Desktop - 769px to 1024px */
+@media screen and (max-width: 1024px) {
+  .dashboard-main {
+    padding: 0.875rem;
+  }
+}
+
+/* Tablet - 426px to 768px */
 @media screen and (max-width: 768px) {
   .dashboard-main {
     padding: 0.75rem;
   }
 }
 
+/* Mobile - 425px and below */
 @media screen and (max-width: 425px) {
   .dashboard-main {
     padding: 0.5rem;
+  }
+}
+
+/* Small Mobile - 320px and below */
+@media screen and (max-width: 320px) {
+  .dashboard-main {
+    padding: 0.375rem;
   }
 }

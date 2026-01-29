@@ -1,25 +1,125 @@
 .card {
-  /* background: #f1f4ff; */
+  background-color: rgb(197, 197, 224);
   border-radius: 15px;
-  padding: 8px 10px;
+  padding: 10px 12px;
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 4px;
   font-size: 14px;
-  background-color: rgb(197, 197, 224);
+  min-width: 120px;
+  flex: 1;
+  max-width: 200px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .icon {
   margin-left: 10px;
+  flex-shrink: 0;
 }
+
 .title {
   font-weight: 500;
   color: #1c1c1c;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 12px;
   color: black;
+  gap: 8px;
+}
+
+/* Small Desktop - 769px to 1024px */
+@media screen and (max-width: 1024px) {
+  .card {
+    padding: 9px 11px;
+    font-size: 13px;
+    border-radius: 13px;
+    min-width: 110px;
+    max-width: 180px;
+  }
+
+  .footer {
+    font-size: 11px;
+  }
+}
+
+/* Tablet - 426px to 768px */
+@media screen and (max-width: 768px) {
+  .card {
+    padding: 8px 10px;
+    font-size: 12px;
+    border-radius: 12px;
+    min-width: 100px;
+    max-width: none;
+    flex: 1 1 calc(50% - 0.375rem);
+  }
+
+  .icon {
+    margin-left: 8px;
+  }
+
+  .footer {
+    font-size: 10px;
+    gap: 6px;
+  }
+}
+
+/* Mobile - 425px and below */
+@media screen and (max-width: 425px) {
+  .card {
+    padding: 8px 10px;
+    font-size: 12px;
+    border-radius: 10px;
+    min-width: unset;
+    max-width: 100%;
+    flex: 1 1 100%;
+    gap: 3px;
+  }
+
+  .icon {
+    margin-left: 6px;
+  }
+
+  .title {
+    font-size: 12px;
+  }
+
+  .footer {
+    font-size: 10px;
+    gap: 4px;
+    flex-wrap: wrap;
+  }
+}
+
+/* Small Mobile - 320px and below */
+@media screen and (max-width: 320px) {
+  .card {
+    padding: 6px 8px;
+    font-size: 11px;
+    border-radius: 8px;
+    gap: 2px;
+  }
+
+  .title {
+    font-size: 11px;
+  }
+
+  .footer {
+    font-size: 9px;
+  }
+
+  .icon {
+    margin-left: 4px;
+  }
 }
